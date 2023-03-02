@@ -1,0 +1,20 @@
+name: surreal_collage
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - coverage=5.3
+  - pylint=2.6.0
+  - unittest-xml-reporting
+  - lxml
+  - pip
+  - opencv
+  - pip:
+    # This is for storing data in artifactory
+    # If you use variant 1: source goes into tools/src
+    # - "--editable=git+ssh://git@git.corp.adobe.com/lagrange/tiny@v1.4.2#egg=tiny"
+    # If you use variant 2: source goes into the default location where pip installs
+    # libraries
+    - git+ssh://git@git.corp.adobe.com/lagrange/tiny@v1.4.2
+    # Python utils
+    - git+ssh://git@git.corp.adobe.com/euclid/PyEssentials@v1.0.0

@@ -1,0 +1,38 @@
+// This file is adapted from https://git.corp.adobe.com/euclid/python-project-scaffold
+{
+  "python.pythonPath": "${env:SURREAL_COLLAGE_PYTHON_PATH}",
+
+  "python.testing.unittestArgs": [
+      "-v",
+      "-s", "./tests",
+      "-p", "test_*.py"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.unittestEnabled": true,
+
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/*.egg-info": true,
+    "**/CVS": true,
+    ".venv": true,
+  },
+
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+      "files.trimTrailingWhitespace": false
+  },
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  "terminal.integrated.inheritEnv": true,
+}

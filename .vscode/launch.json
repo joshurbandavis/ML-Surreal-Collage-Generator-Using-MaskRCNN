@@ -1,0 +1,48 @@
+// This file is adapted from https://git.corp.adobe.com/euclid/python-project-scaffold
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "tests",
+      "request": "launch",
+      "type": "python",
+      "program": "${workspaceFolder}/tests/main.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--xml=.tmp_test_out/test_report.xml",
+        "--log=.tmp_test_out/test_log.txt",
+        // Add more args here if need be, but don't check them in
+        // for example to run only one test you can put
+        // "--no-discover", "test_demo.TestDemo.test_example_fixture",
+      ]
+    },
+    {
+      "name": "action 1",
+      "request": "launch",
+      "type": "python",
+      "module": "surreal_collage.commands.main",
+      "console": "integratedTerminal",
+      "args" :[
+        "action1",
+        "--arg1", "wat", "one", "2", "free",
+        "--style", "butter",
+        "--force"
+      ]
+    },
+    {
+      "name": "action 2",
+      "request": "launch",
+      "type": "python",
+      "module": "surreal_collage.commands.main",
+      "console": "integratedTerminal",
+      "args" :[
+        "action2",
+        "subaction2",
+        "--something", "anything"
+      ]
+    }
+  ]
+}
